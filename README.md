@@ -326,6 +326,8 @@ Tất cả bản dịch cho repo này sẽ được liệt kê bên dưới:
 
 ### Bài viết
 
+ * 📜 [Vài nét về V8 - Javascript Engine đằng sau Chrome và Node.js](https://kipalog.com/posts/Vai-net-ve-V8---Javascript-Engine-dang-sau-Chrome-va-Node-js)
+ * 📜 [Cách thức hoạt động của JavaScript: V8 engine và 5 mẹo tối ưu hóa](https://techtalk.vn/cach-hoat-dong-cua-javascript-v8-engine-va-5-meo-toi-uu-hoa.html)
  * 📜 [JavaScript Engines — Jen Looper](http://www.softwaremag.com/javascript-engines/)
  * 📜 [Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code — DroidHead](https://medium.freecodecamp.org/understanding-the-core-of-nodejs-the-powerful-chrome-v8-engine-79e7eb8af964)
  * 📜 [Understanding V8’s Bytecode — Franziska Hinkelmann](https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775)
@@ -336,6 +338,7 @@ Tất cả bản dịch cho repo này sẽ được liệt kê bên dưới:
 
 ### Videos
 
+ * 🎥 [Javascript Chuyên Sâu: Javascript Engine là gì? V8 là sao?](https://www.youtube.com/watch?v=uzJ3huwHC0A)
  * 🎥 [JavaScript Engines: The Good Parts™ — Mathias Bynens & Benedikt Meurer](https://www.youtube.com/watch?v=5nmpokoRaZI)
 
 **[⬆ Lên đầu trang](#mục-lục)**
