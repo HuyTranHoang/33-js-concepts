@@ -3,7 +3,7 @@
   <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/dsHmk6H.jpg" alt="33 Concepts Every JS Developer Should Know" width=200"></a>
   <br>
     <br>
-  33 Concepts Every JavaScript Developer Should Know
+  33 khái niệm mà bất cứ JavaScript Developer nên biết
   <br><br>
 </h1>
 
@@ -19,15 +19,15 @@
   </a>
 </p>
 
-## Introduction
+## Giới thiệu
 
-This repository was created with the intention of helping developers master their concepts in JavaScript. It is not a requirement, but a guide for future studies. It is based on an article written by [Stephen Curtis](https://twitter.com/stephenthecurt) and you can read it [here](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
+Repository này được tạo ra với mục đích giúp các nhà phát triển nắm vững các khái niệm trong JavaScript. Nó không phải là bắt buộc, nhưng là một hướng dẫn cho các nghiên cứu trong tương lai. Repo này được viết bởi [Stephen Curtis](https://twitter.com/stephenthecurt) và bạn có thể đọc nó [ở đây](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
 
-## Community
+## Cộng đồng
 
-Feel free to submit a PR adding a link to your own recaps or reviews. If you want to translate the repo into your native language, please feel free to do so.
+Vui lòng gửi PR để thêm liên kết tới bản tóm tắt hoặc bài đánh giá của riêng bạn. Nếu bạn muốn dịch repo sang ngôn ngữ mẹ đẻ của bạn, hãy làm thoải mái nhé.
 
-All the translations for this repo will be listed below:
+Tất cả bản dịch cho repo này sẽ được liệt kê bên dưới:
 
 - [Chinese](https://github.com/stephentian/33-js-concepts) — Re Tian
 - [Portuguese-BR](https://github.com/tiagoboeing/33-js-concepts) — Tiago Boeing
@@ -35,10 +35,11 @@ All the translations for this repo will be listed below:
 - [Spanish](https://github.com/adonismendozaperez/33-js-conceptos) — Adonis Mendoza
 - [Turkish](https://github.com/ilker0/33-js-concepts) — İlker Demir
 - [Russian](https://github.com/gumennii/33-js-concepts) — Mihail Gumennii
+- [Tiếng Việt](https://github.com/nguyentranchung/33-js-concepts) — Nguyễn Trần Chung
 
 ---
 
-## Table of Contents
+## Mục lục
 
 1. **[Call Stack](#1-call-stack)**
 2. **[Primitive Types](#2-primitive-types)**
@@ -46,11 +47,11 @@ All the translations for this repo will be listed below:
 4. **[Implicit, Explicit, Nominal, Structuring and Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
 5. **[== vs === vs typeof](#5--vs--vs-typeof)**
 6. **[Function Scope, Block Scope and Lexical Scope](#6-function-scope-block-scope-and-lexical-scope)**
-7. **[Expression vs Statement](#7-expression-vs-statement)**
+7. **[Expression vs Statement](#7-expression-vs-statement)** Biểu thức, câu lệnh.
 8. **[IIFE, Modules and Namespaces](#8-iife-modules-and-namespaces)**
 9. **[Message Queue and Event Loop](#9-message-queue-and-event-loop)**
 10. **[setTimeout, setInterval and requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
-11. **[JavaScript Engines](#11-javascript-engines)**
+11. **[JavaScript Engines](#11-javascript-engines)** Trình thông dịch mã Javascript
 12. **[Bitwise Operators, Type Arrays and Array Buffers](#12-bitwise-operators-type-arrays-and-array-buffers)**
 13. **[DOM and Layout Trees](#13-dom-and-layout-trees)**
 14. **[Factories and Classes](#14-factories-and-classes)**
@@ -62,24 +63,24 @@ All the translations for this repo will be listed below:
 20. **[Pure Functions, Side Effects and State Mutation](#20-pure-functions-side-effects-and-state-mutation)**
 21. **[Closures](#21-closures)**
 22. **[High Order Functions](#22-high-order-functions)**
-23. **[Recursion](#23-recursion)**
+23. **[Recursion](#23-recursion)** Đệ quy
 24. **[Collections and Generators](#24-collections-and-generators)**
-25. **[Promises](#25-promises)**
-26. **[async/await](#26-asyncawait)**
-27. **[Data Structures](#27-data-structures)**
-28. **[Expensive Operation and Big O Notation](#28-expensive-operation-and-big-o-notation)**
-29. **[Algorithms](#29-algorithms)**
-30. **[Inheritance, Polymorphism and Code Reuse](#30-inheritance-polymorphism-and-code-reuse)**
-31. **[Design Patterns](#31-design-patterns)**
+25. **[Promises](#25-promises)** Đồng bộ Promises
+26. **[async/await](#26-asyncawait)** Đồng độ async/await
+27. **[Data Structures](#27-data-structures)** Cấu trúc dữ liệu
+28. **[Expensive Operation and Big O Notation](#28-expensive-operation-and-big-o-notation)** Hoạt động tốn kém và Ký hiệu O lớn
+29. **[Algorithms](#29-algorithms)** Thuật toán
+30. **[Inheritance, Polymorphism and Code Reuse](#30-inheritance-polymorphism-and-code-reuse)** Thừa kế, đa hình và tái sử dụng code
+31. **[Design Patterns](#31-design-patterns)** Khuôn mẫu thiết kế
 32. **[Partial Applications, Currying, Compose and Pipe](#32-partial-applications-currying-compose-and-pipe)**
-33. **[Clean Code](#33-clean-code)**
+33. **[Clean Code](#33-clean-code)** Code sạch
 
 
 ---
 
 ## 1. Call Stack
 
-### Articles
+### Bài viết
 
  * 📜 [Understanding Javascript Call Stack, Event Loops — Gaurav Pandvia](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec)
  * 📜 [Understanding the JavaScript Call Stack — Charles Freeborn](https://medium.freecodecamp.org/understanding-the-javascript-call-stack-861e41ae61d4)
@@ -101,13 +102,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Call Stack & Event Loop — movies com](https://www.youtube.com/watch?v=mk0lu9MKBto)
  * 🎥 [The Ultimate Guide to Execution Contexts, Hoisting, Scopes, and Closures in JavaScript — Tyler McGinnis](https://www.youtube.com/watch?v=Nt-qa_LlUH0)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 2. Primitive Types
 
-### Articles
+### Bài viết
 
  * 📜 [How numbers are encoded in JavaScript — Dr. Axel Rauschmayer](http://2ality.com/2012/04/number-encoding.html)
  * 📜 [What You Need to Know About JavaScript Number Type — Max Wizard K](https://medium.com/dailyjs/javascripts-number-type-8d59199db1b6)
@@ -126,13 +127,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript Primitive Data Types — Avelx](https://www.youtube.com/watch?v=qw3j0A3DIzQ)
  * 🎥 [Everything you never wanted to know about JavaScript numbers — Bartek Szopka](https://www.youtube.com/watch?v=MqHDDtVYJRI)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 3. Value Types and Reference Types
 
-### Articles
+### Bài viết
 
  * 📜 [Explaining Value vs. Reference in Javascript — Arnav Aggarwal](https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
  * 📜 [Understand Value and Reference Types in JavaScript — Zsolt Nagy](https://www.zsoltnagy.eu/understand-value-and-reference-types-in-javascript/)
@@ -148,13 +149,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Javascript Pass by Value vs Pass by Reference — techsith](https://www.youtube.com/watch?v=E-dAnFdq8k8)
  * 🎥 [JavaScript Value vs Reference Types — Programming with Mosh](https://www.youtube.com/watch?v=fD0t_DKREbE)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 4. Implicit, Explicit, Nominal, Structuring and Duck Typing
 
-### Articles
+### Bài viết
 
  * 📜 [What you need to know about Javascript's Implicit Coercion — Promise Tochi](https://dev.to/promhize/what-you-need-to-know-about-javascripts-implicit-coercion-e23)
  * 📜 [JavaScript Type Coercion Explained — Alexey Samoshkin](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839)
@@ -170,13 +171,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Coercion in Javascript - Hitesh Choudhary](https://www.youtube.com/watch?v=b04Q_vyqEG8)
  * 🎥 [JavaScript Questions: What is Coercion? - Steven Hancock](https://www.youtube.com/watch?v=z4-8wMSPJyI)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 5. == vs === vs typeof
 
-### Articles
+### Bài viết
 
  * 📜 [JavaScript Double Equals vs. Triple Equals — Brandon Morelli](https://codeburst.io/javascript-double-equals-vs-triple-equals-61d4ce5a121a)
  * 📜 [What is the difference between =, ==, and === in JS? — Codecademy](https://www.codecademy.com/en/forum_questions/558ea4f5e39efed371000508)
@@ -194,13 +195,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript - The typeof operator — Java Brains](https://www.youtube.com/watch?v=ol_su88I3kw)
  * 🎥 [Javascript typeof operator — DevDelight](https://www.youtube.com/watch?v=qPYhTPt_SbQ)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 6. Function Scope, Block Scope and Lexical Scope
 
-### Articles
+### Bài viết
 
  * 📜 [You Don't Know JS: Scope & Closures [Book] — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch3.md)
  * 📜 [The battle between Function Scope and Block Scope — Marius Herring](http://www.deadcoderising.com/2017-04-11-es6-var-let-and-const-the-battle-between-function-scope-and-block-scope/)
@@ -220,13 +221,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript Block Scope and Function Scope — mmtuts](https://www.youtube.com/watch?v=aK_nuUAdr8E)
  * 🎥 [What the Heck is Lexical Scope? — NWCalvank](https://www.youtube.com/watch?v=GhNA0r10MmA)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 7. Expression vs Statement
 
-### Articles
+### Bài viết
 
  * 📜 [All you need to know about Javascript's Expressions, Statements and Expression Statements — Promise Tochi](https://dev.to/promhize/javascript-in-depth-all-you-need-to-know-about-expressions-statements-and-expression-statements-5k2)
  * 📜 [Function Expressions vs Function Declarations — Paul Wilkins](https://www.sitepoint.com/function-expressions-vs-declarations/)
@@ -240,13 +241,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript - Expression vs. Statement — WebTunings](https://www.youtube.com/watch?v=3jDpNGJkupA)
  * 🎥 [Function Statements and Function Expressions — Codeacademy](https://www.youtube.com/watch?v=oB5rH_9bqAI)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 8. IIFE, Modules and Namespaces
 
-### Articles
+### Bài viết
 
  * 📜 [Mastering Immediately-Invoked Function Expressions ― Chandra Gundamaraju](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
  * 📜 [Do ES6 Modules make the case of IIFEs obsolete?](https://hashnode.com/post/do-es6-modules-make-the-case-of-iifes-obsolete-civ96wet80scqgc538un20es0)
@@ -268,13 +269,13 @@ All the translations for this repo will be listed below:
  * 🎥 [ES6 Modules in the Real World — Sam Thorogood](https://www.youtube.com/watch?v=fIP4pjAqCtQ)
  * 🎥 [ES6 Modules — TempleCoding](https://www.youtube.com/watch?v=5P04OK6KlXA)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 9. Message Queue and Event Loop
 
-### Articles
+### Bài viết
 
  * 📜 [JavaScript Event Loop Explained — Anoop Raveendran](https://medium.com/front-end-hacking/javascript-event-loop-explained-4cd26af121d4)
  * 📜 [The JavaScript Event Loop: Explained — Erin Sweson-Healey](https://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/)
@@ -294,13 +295,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Desmitificando el Event Loop (Spanish)](https://www.youtube.com/watch?v=Eqq2Rb7LzYE)
 
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 10. setTimeout, setInterval and requestAnimationFrame
 
-### Articles
+### Bài viết
 
  * 📜 [setTimeout and setInterval — JavaScript.Info](https://javascript.info/settimeout-setinterval)
  * 📜 [Why not to use setInterval — Akanksha Sharma](https://dev.to/akanksha_9560/why-not-to-use-setinterval--2na9)
@@ -317,13 +318,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript setTimeout, setInterval & clearInterval — DoingITeasyChannel](https://www.youtube.com/watch?v=BVALvvy5bZY)
  * 🎥 [JavaScript setTimeOut and setInterval Explained — Theodore Anderson](https://www.youtube.com/watch?v=mVKfrWCOB60)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 11. JavaScript Engines
 
-### Articles
+### Bài viết
 
  * 📜 [JavaScript Engines — Jen Looper](http://www.softwaremag.com/javascript-engines/)
  * 📜 [Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code — DroidHead](https://medium.freecodecamp.org/understanding-the-core-of-nodejs-the-powerful-chrome-v8-engine-79e7eb8af964)
@@ -337,13 +338,13 @@ All the translations for this repo will be listed below:
 
  * 🎥 [JavaScript Engines: The Good Parts™ — Mathias Bynens & Benedikt Meurer](https://www.youtube.com/watch?v=5nmpokoRaZI)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 12. Bitwise Operators, Type Arrays and Array Buffers
 
-### Articles
+### Bài viết
 
  * 📜 [Programming with JS: Bitwise Operations — Alexander Kondov](https://hackernoon.com/programming-with-js-bitwise-operations-393eb0745dc4)
  * 📜 [Using JavaScript’s Bitwise Operators in Real Life — ian m](https://codeburst.io/using-javascript-bitwise-operators-in-real-life-f551a731ff5)
@@ -355,13 +356,13 @@ All the translations for this repo will be listed below:
 
  * 🎥 [JavaScript Bitwise Operators — Programming with Mosh](https://www.youtube.com/watch?v=mesu75PTDC8)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 13. DOM and Layout Trees
 
-### Articles
+### Bài viết
 
  * 📜 [How To Understand and Modify the DOM in JavaScript — Tania Rascia](https://www.digitalocean.com/community/tutorials/introduction-to-the-dom)
  * 📜 [What’s the Document Object Model, and why you should know how to use it — Leonardo Maldonado](https://medium.freecodecamp.org/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d)
@@ -378,13 +379,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript DOM — The Net Ninja](https://www.youtube.com/watch?v=FIORjGvT0kk)
  * 🎥 [JavaScript DOM Crash Course — Traversy Media](https://www.youtube.com/watch?v=0ik6X4DJKCc)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 14. Factories and Classes
 
-### Articles
+### Bài viết
 
  * 📜 [How To Use Classes in JavaScript — Tania Rascia](https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript)
  * 📜 [Javascript Classes — Under The Hood — Majid](https://medium.com/tech-tajawal/javascript-classes-under-the-hood-6b26d2667677)
@@ -403,13 +404,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Factory Functions in JavaScript — Fun Fun Function](https://www.youtube.com/watch?v=ImwrezYhw4w)
  * 🎥 [Javascript Tutorial Function Factories — Crypto Chan](https://www.youtube.com/watch?v=R7-IwpH80UE)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 15. this, call, apply and bind
 
-### Articles
+### Bài viết
 
  * 📜 [How-to: call() , apply() and bind() in JavaScript — Niladri Sekhar Dutta](https://www.codementor.io/niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp)
  * 📜 [JavaScript’s Apply, Call, and Bind Methods are Essential for JavaScript Professionals — Richard Bovell](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
@@ -437,13 +438,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript Practical Applications of Call, Apply and Bind functions — techsith](https://www.youtube.com/watch?v=AYVYxezrMWA)
  * 🎥 [JS Function Methods call(), apply(), and bind() — Steve Griffith](https://www.youtube.com/watch?v=uBdH0iB1VDM)
  
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 16. new, Constructor, instanceof and Instances
 
-### Articles
+### Bài viết
 
  * 📜 [JavaScript For Beginners: the ‘new’ operator — Brandon Morelli](https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e)
  * 📜 [Let’s demystify JavaScript’s ‘new’ keyword — Cynthia Lee](https://medium.freecodecamp.org/demystifying-javascripts-new-keyword-874df126184c)
@@ -455,13 +456,13 @@ All the translations for this repo will be listed below:
  * 📜 [JavaScript instanceof vs typeof — Gary Rafferty](http://garyrafferty.com/2012/12/07/JavaScript-instanceof-vs-typeof.html)
  * 📜 [Function and Object, instances of each other — Kiro Risk](https://javascriptrefined.io/function-and-object-instances-of-each-other-1e1095d5faac)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 17. Prototype Inheritance and Prototype Chain
 
-### Articles
+### Bài viết
 
  * 📜 [Javascript : Prototype vs Class — Valentin PARSY](https://medium.com/@parsyval/javascript-prototype-vs-class-a7015d5473b)
  * 📜 [JavaScript engine fundamentals: optimizing prototypes — Mathias Bynens](https://mathiasbynens.be/notes/prototypes)
@@ -499,13 +500,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Prototypes in Javascript - p5.js Tutorial — The Coding Train](https://www.youtube.com/watch?v=hS_WqkyUah8)
 
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 18. Object.create and Object.assign
 
-### Articles
+### Bài viết
 
  * 📜 [Object.create() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
  * 📜 [Object.create in JavaScript — Rupesh Mishra](https://hackernoon.com/object-create-in-javascript-fa8674df6ed2)
@@ -524,13 +525,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Object.assign() explained — Aaron Writes Code](https://www.youtube.com/watch?v=aw7NfYhR5rc)
  * 🎥 [Object.assign() Method — techsith](https://www.youtube.com/watch?v=9Ky4X6inpi4)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 19. map, reduce, filter
 
-### Articles
+### Bài viết
 
  * 📜 [JavaScript Functional Programming — map, filter and reduce — Bojan Gvozderac](https://medium.com/jsguru/javascript-functional-programming-map-filter-and-reduce-846ff9ba492d)
  * 📜 [Learn map, filter and reduce in Javascript — João Miguel Cunha](https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4)
@@ -560,13 +561,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Learning Functional Programming with JavaScript — Anjana Vakil - JSUnconf](https://www.youtube.com/watch?v=e-5obm1G_FY&t=1521s)
 
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 20. Pure Functions, Side Effects and State Mutation
 
-### Articles
+### Bài viết
 
  * 📜 [Javascript and Functional Programming — Pure Functions — Omer Goldberg](https://hackernoon.com/javascript-and-functional-programming-pt-3-pure-functions-d572bb52e21c)
  * 📜 [Master the JavaScript Interview: What is a Pure Function? — Eric Elliott](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
@@ -588,13 +589,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript Pure Functions — Seth Alexander](https://www.youtube.com/watch?v=frT3H-eBmPc)
 
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 21. Closures
 
-### Articles
+### Bài viết
 
  * 📜 [Closures — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
  * 📜 [I never understood JavaScript closures — Olivier De Meulder](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
@@ -617,14 +618,15 @@ All the translations for this repo will be listed below:
  * 🎥 [Closures — freeCodeCamp](https://www.youtube.com/watch?v=1JsJx1x35c0)
  * 🎥 [JavaScript Closures — CodeWorkr](https://www.youtube.com/watch?v=-rLrGAXK8WE)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 22. High Order Functions
 
-### Articles
+### Bài viết
 
+ * 📜 [Higher Order Functions là gì và được sử dụng như thế nào?](https://chungnguyen.xyz/posts/higher-order-functions-la-gi-va-duoc-su-dung-nhu-the-nao)
  * 📜 [Higher-Order Functions — Eloquent JavaScript [Book]](https://eloquentjavascript.net/05_higher_order.html)
  * 📜 [Higher-Order Functions in JavaScript — M. David Green](https://www.sitepoint.com/higher-order-functions-javascript/)
  * 📜 [Higher Order Functions: Using Filter, Map and Reduce for More Maintainable Code — Guido Schmitz](https://medium.freecodecamp.org/higher-order-functions-in-javascript-d9101f9cf528)
@@ -645,13 +647,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Higher Order Iterators in JavaScript — Fun Fun Function](https://www.youtube.com/watch?v=GYRMNp1SKXA)
  * 🎥 [Higher Order Functions in JavaScript — The Coding Train](https://www.youtube.com/watch?v=H4awPsyugS0)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 23. Recursion
 
-### Articles
+### Bài viết
 
  * 📜 [Recursion in JavaScript — Kevin Ennis](https://medium.freecodecamp.org/recursion-in-javascript-1608032c7a1f)
  * 📜 [Understanding Recursion in JavaScript — Zak Frisch](https://medium.com/@zfrisch/understanding-recursion-in-javascript-992e96449e03)
@@ -672,13 +674,13 @@ All the translations for this repo will be listed below:
  * 🎥 [What on Earth is Recursion? — Computerphile](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
  * 🎥 [Javascript Tutorial 34: Introduction To Recursion — codedamn](https://www.youtube.com/watch?v=9NO5dXSlbv8)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 24. Collections and Generators
 
-### Articles
+### Bài viết
 
  * 📜 [ES6 In Depth: Collections — Jason Orendorff](https://hacks.mozilla.org/2015/06/es6-in-depth-collections/)
  * 📜 [ES6 Collections: Using Map, Set, WeakMap, WeakSet — Kyle Pennell](https://www.sitepoint.com/es6-collections-map-set-weakmap-weakset/)
@@ -707,13 +709,13 @@ All the translations for this repo will be listed below:
  * 🎥 [The Differences between ES6 Maps and Sets — Steve Griffith](https://www.youtube.com/watch?v=m4abICrldQI)
  * 🎥 [Javascript Generators - THEY CHANGE EVERYTHING - ES6 Generators Harmony Generators — LearnCode.academy](https://www.youtube.com/watch?v=QO07THdLWQo)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 25. Promises
 
-### Articles
+### Bài viết
 
  * 📜 [Promise — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
  * 📜 [JavaScript Promises for Dummies ― Jecelyn Yeen](https://scotch.io/tutorials/javascript-promises-for-dummies)
@@ -738,13 +740,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Error Handling Promises in JavaScript — Fun Fun Function](https://www.youtube.com/watch?v=f8IgdnYIwOU)
  * 🎥 [Promises Part 1 - Topics of JavaScript/ES6 — The Coding Train](https://www.youtube.com/watch?v=QO4NXhWo_NM)
  
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 26. async/await
 
-### Articles
+### Bài viết
 
  * 📜 [async/await — JavaScript.Info](https://javascript.info/async-await)
  * 📜 [Understanding async/await in Javascript — Gokul N K](https://hackernoon.com/understanding-async-await-in-javascript-1d81bb079b2c)
@@ -770,13 +772,13 @@ All the translations for this repo will be listed below:
  * 🎥 [async/await Part 1 - Topics of JavaScript/ES8 — The Coding Train](https://www.youtube.com/watch?v=XO77Fib9tSI&index=3&list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx)
  * 🎥 [async/await Part 2 - Topics of JavaScript/ES8 — The Coding Train](https://www.youtube.com/watch?v=chavThlNz3s&index=4&list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 27. Data Structures
 
-### Articles
+### Bài viết
 
  * 📜 [Data Structures in JavaScript — Thon Ly](https://medium.com/siliconwat/data-structures-in-javascript-1b9aed0ea17c)
  * 📜 [Algorithms and Data Structures in JavaScript — Oleksii Trekhleb](https://itnext.io/algorithms-and-data-structures-in-javascript-a71548f902cb)
@@ -795,13 +797,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Data Structures and Algorithms in JavaScript — freeCodeCamp](https://www.youtube.com/watch?v=Gj5qBheGOEo&list=PLWKjhJtqVAbkso-IbgiiP48n-O-JQA9PJ)
  * 🎥 [Learning JavaScript Data Structures and Algorithms: Sorting — Packt Video](https://www.youtube.com/watch?v=Ymh_AurrMbA)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 28. Expensive Operation and Big O Notation
 
-### Articles
+### Bài viết
 
  * 📜 [Big O Notation in Javascript — César Antón Dorantes](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
  * 📜 [Time Complexity/Big O Notation — Tim Roberts](https://medium.com/javascript-scene/time-complexity-big-o-notation-1a4310c3ee4b)
@@ -816,13 +818,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Essential Big O for JavaScript Developers — Dave Smith](https://www.youtube.com/watch?v=KatlvCFHPRo)
  * 🎥 [Big O Notation - Time Complexity Analysis — WebTunings](https://www.youtube.com/watch?v=ALl86xJiTD8)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 29. Algorithms
 
-### Articles
+### Bài viết
 
  * 📜 [Data Structures and Algorithms using ES6](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6)
  * 📜 [Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
@@ -833,13 +835,13 @@ All the translations for this repo will be listed below:
  * 📜 [Data Structures and Algorithms library in JavaScript](https://github.com/yangshun/lago)
  * 📜 [Collection of computer science algorithms and data structures written in JavaScript](https://github.com/idosela/algorithms-in-javascript)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 30. Inheritance, Polymorphism and Code Reuse
 
-### Articles
+### Bài viết
 
  * 📜 [Class inheritance, super — JavaScript.Info](https://javascript.info/class-inheritance)
  * 📜 [Inheritance in JavaScript — MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
@@ -856,13 +858,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript ES6 Classes and Inheritance — Traversy Media](https://www.youtube.com/watch?v=RBLIm5LMrmc)
  * 🎥 [Polymorphism in JavaScript — kudvenkat](https://www.youtube.com/watch?v=zdovG9cuEBA)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 31. Design Patterns
 
-### Articles
+### Bài viết
 
  * 📜 [4 JavaScript Design Patterns You Should Know — Devan Patel](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
  * 📜 [JavaScript Design Patterns – Beginner's Guide to Mobile Web Development — Soumyajit Pathak](https://medium.com/beginners-guide-to-mobile-web-development/javascript-design-patterns-25f0faaaa15)
@@ -878,13 +880,13 @@ All the translations for this repo will be listed below:
  * 🎥 [JavaScript Design Patterns — Udacity](https://www.udacity.com/course/javascript-design-patterns--ud989)
  * 🎥 [JavaScript Patterns for 2017 — Scott Allen](https://www.youtube.com/watch?v=hO7mzO83N1Q)
 
- **[⬆ Back to Top](#table-of-contents)**
+ **[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 32. Partial Applications, Currying, Compose and Pipe
 
-### Articles
+### Bài viết
 
  * 📜 [Use function composition in JavaScript — Rémi](https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj)
  * 📜 [Currying in JavaScript ES6 — Adam Bene](https://blog.benestudio.co/currying-in-javascript-es6-540d2ad09400)
@@ -920,13 +922,13 @@ All the translations for this repo will be listed below:
  * 🎥 [Partial Application vs. Currying — NWCalvank](https://www.youtube.com/watch?v=DzLkRsUN2vE)
  * 🎥 [JavaScript Partial Application — Theodore Anderson](https://www.youtube.com/watch?v=jkebgHEcvac)
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Lên đầu trang](#mục-lục)**
 
 ---
 
 ## 33. Clean Code
 
-### Articles
+### Bài viết
 
  * 📜 [Clean Code concepts adapted for JavaScript — Ryan McDermott](https://github.com/ryanmcdermott/clean-code-javascript)
  * 📜 [JavaScript Clean Coding Best Practices — András Tóth](https://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/)
@@ -938,4 +940,4 @@ All the translations for this repo will be listed below:
 ### Videos
 *  🎥 [JavaScript Pro Tips - Code This, NOT That](https://www.youtube.com/watch?v=Mus_vwhTCq0)
 
- **[⬆ Back to Top](#table-of-contents)**
+ **[⬆ Lên đầu trang](#mục-lục)**
