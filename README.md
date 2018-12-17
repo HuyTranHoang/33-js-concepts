@@ -42,7 +42,7 @@ Tất cả bản dịch cho repo này sẽ được liệt kê bên dưới:
 ## Mục lục
 
 1. **[Call Stack](#1-call-stack)**
-2. **[Primitive Types](#2-primitive-types)**
+2. **[Primitive Types](#2-primitive-types)** Kiểu dữ liệu nguyên thủy
 3. **[Value Types and Reference Types](#3-value-types-and-reference-types)**
 4. **[Implicit, Explicit, Nominal, Structuring and Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
 5. **[== vs === vs typeof](#5--vs--vs-typeof)**
